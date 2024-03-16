@@ -1,0 +1,72 @@
+/* Import the desired fonts */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+.feature-container {
+    background-color: #d90000;
+    font-family: 'Raleway', sans-serif; /* Change the default font to Raleway */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+    padding: 10px;
+}
+
+.feature-item {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 250px;
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    margin-bottom: 20px;
+    background: linear-gradient(to bottom right, #ffffff, #f9f9f9);
+}
+
+.feature-item:hover {
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+}
+
+.feature-icon {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #b90000;
+    border: 2px solid #b50000;
+    border-radius: 50%;
+    padding: 10px;
+    animation: pulse 1s infinite alternate;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+.feature-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif; /* Change the font for the title */
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.feature-description {
+    font-size: 0.9rem;
+    color: #000000;
+    font-family: 'Roboto', sans-serif; /* Change the font for the description */
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .feature-item {
+        max-width: 100%;
+    }
+}

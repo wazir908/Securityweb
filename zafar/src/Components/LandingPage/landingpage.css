@@ -1,0 +1,154 @@
+.landing-container {
+    font-family: 'kreon', sans-serif;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.landing-carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 40%;
+    margin-left: 50px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: left;
+    color: #fff;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.overlay h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.overlay p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.overlay button {
+    border: none;
+    padding: 12px 24px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.overlay button:hover {
+    background-color: #d50000;
+}
+
+.pagination {
+    margin-top: 20px;
+    justify-content: center;
+  }
+  
+  .pagination button {
+    background-color: transparent;
+    border: 1px solid #ccc;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 5px;
+    padding: 5px 10px;
+  }
+  
+  .pagination button.active {
+    background-color: #d50000;
+    border-color: #ffffff;
+    color: #fff;
+  }
+
+.primary-btn {
+    background: linear-gradient(135deg, #d50000, #d50000);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 24px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    position: relative;
+}
+
+.primary-btn::after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    bottom: -2px;
+    left: -2px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    animation: shining 2s infinite alternate;
+}
+
+@keyframes shining {
+    from {
+        border-color: #fff;
+    }
+    to {
+        border-color: transparent;
+    }
+}
+
+.primary-btn:hover {
+    background-color: #cc0000;
+}
+
+.landing-carousel img {
+    width: 100%;
+    max-height: 900px; /* Increase the max-height value as needed */
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .overlay {
+        top: 50%;
+        left: 40%;
+        width: calc(100% - 40px);
+    }
+
+    .overlay h1 {
+        font-size: 1em;
+    }
+
+    .overlay p {
+        font-size: 0.6em;
+    }
+
+    .overlay button {
+        padding: 8px 10px;
+        font-size: 0.7em;
+    }
+
+    .overlay .left-arrow {
+        left: 10px;
+    }
+
+    .overlay .right-arrow {
+        right: 10px;
+    }
+    .primary-btn {
+        width: 50%;
+    }
+}

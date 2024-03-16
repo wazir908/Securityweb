@@ -1,0 +1,111 @@
+.testimonials-section {
+    font-family: 'kreon', sans-serif;
+    text-align: center;
+    padding: 50px;
+    background-color: #fff;
+  }
+  
+  .testimonials-container {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  
+  .testimonials-section h2 {
+    font-size: 2rem;
+    color: #000;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  .testimonials-section h2::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -5px;
+    width: 20%;
+    border-radius: 20px;
+    height: 6px;
+    background-color: #d50000;
+    display: block;
+  }
+  
+  .testimonial {
+    background: linear-gradient(135deg, #b10000 0%, #d10101 50%, #d50000 50%, #fffbfb 100%);
+    color: #fff;
+    border-radius: 12px;
+    padding: 30px;
+    margin: 0 auto 40px;
+    max-width: 800px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+    border: 2px solid transparent;
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+  }
+  
+  .username {
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+  }
+  
+  .star {
+    color: #ffd700;
+    font-size: 1.2rem;
+    margin-right: 5px;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .testimonials-container {
+      max-width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .testimonial {
+      max-width: 85%;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .testimonials-section h2 {
+      font-size: 1.5rem;
+      color: #000;
+      margin-bottom: 20px;
+      position: relative;
+    }
+  
+    .profile {
+      margin-bottom: 10px;
+    }
+  
+    .profile img {
+      width: 40px;
+      height: 40px;
+    }
+  
+    .testimonial p {
+      font-size: 14px;
+    }
+  }
+  

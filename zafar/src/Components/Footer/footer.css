@@ -1,0 +1,125 @@
+/* Footer container */
+.footer {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+}
+
+/* Center content */
+.container-10 {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Grid layout */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Column styles */
+.col-md-3 {
+    flex: 0 0 calc(25% - 20px);
+    max-width: calc(25% - 20px);
+    margin-bottom: 30px;
+}
+
+/* Logo styles */
+.logo {
+    max-width: 250px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Mission statement styles */
+.mission {
+    color: #000000;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Section title styles */
+h4 {
+    color: #000000;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Footer links styles */
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #555;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #d50000;
+}
+
+.contact-info, .contact-info-1 {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.contact-info li, .contact-info-1 li {
+    color: #000000;
+    font-size: 16px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.contact-info svg, .contact-info-1 svg {
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+/* Social icons styles */
+.social-icons-0 {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.social-icons-0 li:not(:last-child) {
+    margin-right: 15px;
+}
+
+.social-icons-0 a {
+    color: #000000;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-icons-0 a:hover {
+    color: #d50000;
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+    .row {
+        margin-left: 20px;
+        flex-direction: column;
+        align-items: left;
+        justify-content: center;
+        padding: 0;
+    }
+    .logo {
+        max-width: 250px;
+        height: auto;
+        align-self: center;
+    }
+    .col-md-3 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+}
