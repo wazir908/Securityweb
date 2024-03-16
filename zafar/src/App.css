@@ -1,3 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Kreon:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+h2 {
+    font-family: 'Kreon',sans-serif;
+}
+body {
+    width: 100%;
+    height: auto;
+}
+
+
+::-webkit-scrollbar {
+    width: 6px;
+    background-color: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #d50000;
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #ff3333;
+}
+
+::-webkit-scrollbar-track {
+    background: #000000;
+}

@@ -1,14 +1,19 @@
 import React from 'react';
-import { AiOutlineBank, AiOutlineHome, AiOutlineShop, AiOutlineCar, AiOutlineUser } from 'react-icons/ai';
+import { AiOutlineBank, AiOutlineHome,AiOutlineAccountBook, AiOutlineShop, AiOutlineCar, AiOutlineUser, AiOutlineTool, AiOutlineSafetyCertificate, AiOutlineControl, AiOutlineTeam, AiOutlineUnlock, AiOutlineBuilding, AiOutlineAlert, AiOutlineFieldTime, AiOutlineFieldNumber, AiOutlineCamera, AiOutlineSecurityScan } from 'react-icons/ai';
 import './services.css'; 
 
-
 import service1Img from '../../img/services/service-1.jpg';
-import service2Img from '../../img/services/service-2.jpg';
-import service3Img from '../../img/services/service-3.jpg';
-import service4Img from '../../img/services/service-4.jpg';
-import service5Img from '../../img/services/service-5.jpg';
-import service6Img from '../../img/services/service-6.jpg';
+import service2Img from  '../../img/services/service-1.jpg';
+import service3Img from  '../../img/services/service-1.jpg';
+import service4Img from  '../../img/services/service-1.jpg';
+import service5Img from  '../../img/services/service-1.jpg';
+import service6Img from  '../../img/services/service-1.jpg';
+import service7Img from  '../../img/services/service-1.jpg';
+import service8Img from  '../../img/services/service-1.jpg';
+import service9Img from  '../../img/services/service-1.jpg';
+import service10Img from '../../img/services/service-1.jpg';
+import service11Img from '../../img/services/service-1.jpg';
+import service12Img from '../../img/services/service-1.jpg';
 
 const Services = () => {
   return (
@@ -19,40 +24,76 @@ const Services = () => {
       </div>
       <div className="services-row">
         <ServiceCard
-          icon={AiOutlineBank}
-          title="Office Security"
-          imgSrc={service1Img}
-          description="Protect your office space with our comprehensive security solutions. We offer advanced surveillance systems, access control, and onsite security personnel."
+          icon={AiOutlineAlert}
+          title="Front of House Security"
+          imgSrc={service7Img}
+          description="Ensure the safety and security of your front of house area with our professional security personnel. We provide vigilant monitoring and proactive security measures."
         />
         <ServiceCard
-          icon={AiOutlineHome}
-          title="Home Security"
-          imgSrc={service2Img}
-          description="Ensure the safety of your home and loved ones with our home security services. From alarm systems to smart locks, we provide everything you need for peace of mind."
+          icon={AiOutlineUnlock}
+          title="Vacant Property Security"
+          imgSrc={service8Img}
+          description="Protect vacant properties from trespassing, vandalism, and theft with our vacant property security services. Our security solutions help deter unwanted intrusions and maintain property integrity."
+        />
+        <ServiceCard
+          icon={AiOutlineAccountBook}
+          title="ESPO Framework"
+          imgSrc={service9Img}
+          description="Utilize our security services conveniently through the ESPO framework. We offer streamlined procurement processes and cost-effective solutions for public sector organizations."
         />
         <ServiceCard
           icon={AiOutlineShop}
-          title="Industry Security"
+          title="Retail Security"
+          imgSrc={service10Img}
+          description="Ensure the safety of your retail establishment and customers with our retail security services. Our trained personnel provide loss prevention, crowd management, and incident response."
+        />
+        <ServiceCard
+          icon={AiOutlineTeam}
+          title="KRY Holding"
+          imgSrc={service11Img}
+          description="Partner with KRY Holding for comprehensive security solutions tailored to your specific needs. Our industry expertise and innovative approaches ensure optimal security outcomes."
+        />
+        <ServiceCard
+          icon={AiOutlineSecurityScan}
+          title="Security Assessment"
+          imgSrc={service12Img}
+          description="Evaluate your security posture and identify vulnerabilities with our comprehensive security assessments. Our expert analysis helps you strengthen your defenses and mitigate risks."
+        />
+        <ServiceCard
+          icon={AiOutlineFieldTime}
+          title="Manned Guarding"
+          imgSrc={service1Img}
+          description="Ensure the safety of your premises with our manned guarding services. Our trained guards provide round-the-clock surveillance, access control, and emergency response."
+        />
+        <ServiceCard
+          icon={AiOutlineFieldNumber}
+          title="Gate House Duties"
+          imgSrc={service2Img}
+          description="Control access to your facility with our gate house duties services. Our trained personnel manage entry and exit points, verify credentials, and enforce security protocols."
+        />
+        <ServiceCard
+          icon={AiOutlineTool}
+          title="Construction Security"
           imgSrc={service3Img}
-          description="Secure your industrial facilities and assets with our industry security solutions. Our specialized services include perimeter protection, asset tracking, and emergency response."
-        />
-        <ServiceCard
-          icon={AiOutlineCar}
-          title="Transport Security"
-          imgSrc={service4Img}
-          description="Keep your transportation operations safe and secure with our transport security services. We offer vehicle tracking, cargo protection, and driver safety solutions."
-        />
-        <ServiceCard
-          icon={AiOutlineBank}
-          title="Objects Security"
-          imgSrc={service5Img}
-          description="Safeguard your valuable objects and assets with our customized security solutions. Whether it's artwork, jewelry, or collectibles, we have you covered."
+          description="Protect your construction site from theft, vandalism, and unauthorized access with our construction security services. We offer perimeter protection, surveillance, and onsite patrols."
         />
         <ServiceCard
           icon={AiOutlineUser}
-          title="Private Security"
+          title="Concierge Services"
+          imgSrc={service4Img}
+          description="Elevate the service experience for your residents or guests with our concierge services. From front desk management to package handling, we ensure a welcoming and secure environment."
+        />
+        <ServiceCard
+          icon={AiOutlineCar}
+          title="Traffic Management"
+          imgSrc={service5Img}
+          description="Manage traffic flow and parking logistics efficiently with our traffic management services. Our trained personnel ensure smooth operations and enhance safety for pedestrians and vehicles."
+        />
+        <ServiceCard
+          icon={AiOutlineCamera}
+          title="CCTV Monitoring"
           imgSrc={service6Img}
-          description="Enhance your personal security with our private security services. Our trained professionals offer VIP protection, personal escort."
+          description="Enhance surveillance and threat detection with our CCTV monitoring services. Our trained operators monitor camera feeds, identify potential risks, and provide real-time alerts for timely intervention."
         />
       </div>
     </div>

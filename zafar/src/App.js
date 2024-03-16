@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, Component } from 'react';
+import './App.css';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { FaUserFriends, FaHardHat, FaPhoneAlt, FaHeart } from 'react-icons/fa';
 import Loader from './Components/Loader/loader';
@@ -9,10 +10,14 @@ import Feature from './Components/Feature/feature';
 import AboutUs from './Components/AboutUs/aboutus';
 import CounterSection from './Components/CounterSection/countersection';
 import Icons from './Components/Icons/icons';
+import Feature1 from './Components/Feature1/feature1';
 import Services from './Components/Services/services';
 import Testimonials from './Components/Testimonials/testimonials';
 import Contact from './Components/Contact/contact';
 import Footer from './Components/Footer/footer';
+
+
+
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -27,6 +32,7 @@ function App() {
 
     fetchData();
   }, []);
+
 
 {/* here i Started  features icons functions using props in react */}
 
@@ -57,6 +63,7 @@ function App() {
 {/* here i ended  features icons functions using props in react */}
 
 
+
   return (
     <Router>
       {loading ? (
@@ -70,6 +77,7 @@ function App() {
           <AboutUs />
           <CounterSection/>
           <Icons/>
+          <Feature1 />
           <Services />
           <Testimonials />
           <Contact />

@@ -18,40 +18,37 @@ const AboutUs = () => {
         </p>
         
         <div className="about-us-section row">
-
           <div className="col-sm-12">
             <div className="section-container">
-         
-              <div className="govt-approved">
-                <div className="section-content">
-                  <div className="icon-container">
-                    <div className="icon">
-                      <AiOutlineSafetyCertificate className="display-3 text-primary" />
-                    </div>
-                  </div>
-                  <h5 className="mt-2">Govt Approved</h5>
-                  <p>
-                    Our solutions are certified and approved by government authorities, ensuring the highest level of security standards.
-                  </p>
-                </div>
-              </div>
-   
-              <div className="award-winning">
-                <div className="section-content">
-                  <div className="icon-container">
-                    <div className="icon">
-                      <FaTrophy className="display-3 text-primary" />
-                    </div>
-                  </div>
-                  <h5 className="mt-2">Award Winning</h5>
-                  <p>
-                    Recognized for excellence in security technology, we have been honored with prestigious awards for our innovative solutions.
-                  </p>
-                </div>
-              </div>
+              <AboutUsSection
+                icon={<AiOutlineSafetyCertificate className="display-3 text-primary" />}
+                title="Govt Approved"
+                description="Our solutions are certified and approved by government authorities, ensuring the highest level of security standards."
+              />
+              <AboutUsSection
+                icon={<FaTrophy className="display-3 text-primary" />}
+                title="Award Winning"
+                description="Recognized for excellence in security technology, we have been honored with prestigious awards for our innovative solutions."
+              />
             </div>
           </div>
         </div>
+      </div>
+    </div>
+  );
+}
+
+const AboutUsSection = ({ icon, title, description }) => {
+  return (
+    <div className="govt-approved">
+      <div className="section-content">
+        <div className="icon-container">
+          <div className="icon">
+            {icon}
+          </div>
+        </div>
+        <h5 className="mt-2">{title}</h5>
+        <p>{description}</p>
       </div>
     </div>
   );
