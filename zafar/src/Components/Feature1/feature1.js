@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaCheckCircle, FaMoneyBillAlt, FaBuilding, FaPhone, FaLock, FaShieldAlt } from 'react-icons/fa';
-import featureImage from '../../img/hero/hero-2.jpg';
+import featureImage from '../../img/hero/hero-5.jpg';
 import './feature.css';
 
 const Feature1 = ({ image }) => {

@@ -1,110 +1,167 @@
-/* Footer container */
-.footer {
-    background-color: #f8f9fa;
-    padding: 50px 0;
-}
+@import url('https://fonts.googleapis.com/css2?family=Kreon:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:wght@400;700&display=swap');
 
-/* Center content */
-.container-10 {
+.footer {
+    background-color: #000000;
+    font-family: 'Cinxel',serif;
+    color: white;
+    width: 100%;
+    height: auto;
+  }
+  
+  .container-10 {
     max-width: 1200px;
     margin: 0 auto;
-}
-
-/* Grid layout */
-.row {
+  }
+  
+  .row {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-}
-
-/* Column styles */
-.col-md-3 {
+  }
+  
+  .col-md-3 {
     flex: 0 0 calc(25% - 20px);
     max-width: calc(25% - 20px);
     margin-bottom: 30px;
-}
-
-/* Logo styles */
-.logo {
+  }
+  
+  .logo {
     max-width: 250px;
     height: auto;
     margin-bottom: 20px;
-}
-
-/* Mission statement styles */
-.mission {
-    color: #000000;
+  }
+  
+  .mission {
     font-size: 16px;
     line-height: 1.6;
-}
-
-/* Section title styles */
-h4 {
-    color: #000000;
+  }
+  
+  h4 {
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 20px;
-}
-
-/* Footer links styles */
-.footer-links li {
+  }
+  
+  .footer-links li {
     margin-bottom: 10px;
-}
-
-.footer-links a {
-    color: #555;
+  }
+  
+  .footer-links a {
+    color: rgb(255, 255, 255);
     text-decoration: none;
     transition: color 0.3s ease;
-}
-
-.footer-links a:hover {
+  }
+  
+  .footer-links a:hover {
     color: #d50000;
-}
-
-.contact-info, .contact-info-1 {
+  }
+  
+  .contact-info,
+  .contact-info-1 {
     list-style: none;
     padding: 0;
     margin-top: 10px;
-}
-
-.contact-info li, .contact-info-1 li {
-    color: #000000;
+  }
+  
+  .contact-info li,
+  .contact-info-1 li {
     font-size: 16px;
     margin-bottom: 10px;
     display: flex;
     align-items: center;
-}
-
-.contact-info svg, .contact-info-1 svg {
+  }
+  
+  .contact-info svg,
+  .contact-info-1 svg {
     vertical-align: middle;
     margin-right: 10px;
-}
-
-/* Social icons styles */
-.social-icons-0 {
+  }
+  
+  .social-icons-0 {
     list-style: none;
     padding: 0;
     display: flex;
     align-items: center;
-}
-
-.social-icons-0 li:not(:last-child) {
+  }
+  
+  .social-icons-0 li:not(:last-child) {
     margin-right: 15px;
-}
-
-.social-icons-0 a {
-    color: #000000;
-    font-size: 24px;
+  }
+  
+  .social-icons-0 a {
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    margin-left: 10px;
     text-decoration: none;
     transition: color 0.3s ease;
-}
-
-.social-icons-0 a:hover {
+  }
+  
+  .social-icons-0 a:hover {
     color: #d50000;
-}
-
-/* Mobile view */
-@media (max-width: 768px) {
+  }
+  
+  .bottom-bar {
+    background-color: #333;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .social-icons {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .social-icons li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .newsletter-form {
+    display: flex;
+  }
+  
+  .newsletter-form input[type="email"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .newsletter-form button {
+    padding: 8px 15px;
+    background-color: #d50000;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .newsletter-form button:hover {
+    background-color: #b71c1c;
+  }
+  
+  .footer-credit {
+    background-color: #000000;
+    padding: 20px 0;
+    font-family: 'Cinzel', serif;
+    text-align: center;
+  }
+  
+  .footer-credit p {
+    font-size: medium;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    font-family: 'Cinxel',serif;
+  }
+  
+  @media (max-width: 768px) {
     .row {
         margin-left: 20px;
         flex-direction: column;
@@ -112,11 +169,13 @@ h4 {
         justify-content: center;
         padding: 0;
     }
+
     .logo {
         max-width: 250px;
         height: auto;
         align-self: center;
     }
+
     .col-md-3 {
         flex: 0 0 100%;
         max-width: 100%;

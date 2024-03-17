@@ -1,8 +1,6 @@
-/* Import the desired fonts */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:wght@400;700&display=swap');
 .counter-container {
     display: flex;
-    font-family: 'Raleway', sans-serif;
     justify-content: center;
     align-items: center;
     background-color: #d50000; 

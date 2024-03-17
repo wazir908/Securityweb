@@ -1,9 +1,8 @@
-/* Import the desired fonts */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:wght@400;700&display=swap');
 
 .feature-container {
     background-color: #d90000;
-    font-family: 'Raleway', sans-serif; /* Change the default font to Raleway */
+    font-family: 'Raleway', sans-serif; 
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -53,7 +52,7 @@
 .feature-title {
     font-size: 1.5rem;
     font-weight: 700;
-    font-family: 'Raleway', sans-serif; /* Change the font for the title */
+    font-family: 'Raleway', sans-serif; 
     margin-bottom: 10px;
     text-align: center;
 }
@@ -61,7 +60,7 @@
 .feature-description {
     font-size: 0.9rem;
     color: #000000;
-    font-family: 'Roboto', sans-serif; /* Change the font for the description */
+    font-family: 'Roboto', sans-serif; 
     text-align: center;
 }
 

@@ -1,8 +1,8 @@
 .landing-container {
-    font-family: 'kreon', sans-serif;
     position: relative;
     width: 100%;
     height: 100%;
+    background-color: #d50000;
 }
 
 .landing-carousel {
@@ -33,7 +33,8 @@
 }
 
 .overlay h1 {
-    font-size: 3em;
+    font-size: 2.5em;
+    font-family: 'Cinzel', serif;
     margin-bottom: 10px;
 }
 
@@ -117,7 +118,7 @@
 
 .landing-carousel img {
     width: 100%;
-    max-height: 900px; /* Increase the max-height value as needed */
+    max-height: 80s0px;
     object-fit: cover;
 }
 

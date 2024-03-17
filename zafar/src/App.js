@@ -1,7 +1,8 @@
-import React, { useState, useEffect, Component } from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
+import { AiOutlineWarning, AiOutlineUsergroupAdd, AiOutlineAudit } from 'react-icons/ai';
 import { BrowserRouter as Router } from 'react-router-dom';
-import { FaUserFriends, FaHardHat, FaPhoneAlt, FaHeart } from 'react-icons/fa';
+import { FaUserShield, FaCogs, FaPhone, FaHandsHelping } from 'react-icons/fa';
 import Loader from './Components/Loader/loader';
 import TopBar from './Components/TopBar/topbar';
 import Header from './Components/Header/header';
@@ -15,15 +16,13 @@ import Services from './Components/Services/services';
 import Testimonials from './Components/Testimonials/testimonials';
 import Contact from './Components/Contact/contact';
 import Footer from './Components/Footer/footer';
-
-
-
+import SecuritySection from './Components/SecuritySection/securitysection';
 
 function App() {
+  {/*Here I added The Loader script*/}
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-
     const fetchData = () => {
       setTimeout(() => {
         setLoading(false);
@@ -33,36 +32,55 @@ function App() {
     fetchData();
   }, []);
 
+  {/*Loader script edited*/}
 
-{/* here i Started  features icons functions using props in react */}
-
+  {/*Here I added The Features Data props script linking to Feature main */}
   const featuresData = [
     {
-        icon: <FaUserFriends className="feature-icon" />,
-        title: "Professional Staff",
-        description: "Our team consists of highly skilled professionals dedicated to providing top-notch service to our customers."
+      icon: <FaUserShield className="feature-icon" />,
+      title: "Skilled Personnel",
+      description: "Our team comprises highly trained security professionals committed to delivering exceptional security services tailored to your needs."
     },
     {
-        icon: <FaHardHat className="feature-icon" />,
-        title: "Latest Equipment",
-        description: "We use the latest equipment and technology to ensure efficiency and quality in our work."
+      icon: <FaCogs className="feature-icon" />,
+      title: "Advanced Equipment",
+      description: "We deploy state-of-the-art security equipment and technology to ensure maximum protection and vigilance at all times."
     },
     {
-        icon: <FaPhoneAlt className="feature-icon" />,
-        title: "24/7 Support",
-        description: "We provide round-the-clock support to address any concerns or issues you may have."
-    },
-    {
-      icon: <FaPhoneAlt className="feature-icon" />,
+      icon: <FaPhone className="feature-icon" />,
       title: "24/7 Support",
-      description: "We provide round-the-clock support to address any concerns or issues you may have."
-  }
+      description: "Our dedicated support team is available round-the-clock to address any security concerns or emergencies promptly."
+    },
+    {
+      icon: <FaHandsHelping className="feature-icon" />,
+      title: "Emergency Response",
+      description: "Trained in emergency procedures, our security personnel respond swiftly to any crisis, providing immediate assistance when it matters most."
+    }
+  ];
 
-];
+  {/*Here  The Features Data props script linking to Feature main  ended */}
 
-{/* here i ended  features icons functions using props in react */}
+  {/*Here I added securityservices features section props script linking to tabs */}
 
+  const tabs = [
+    {
+      label: 'Threat Detection',
+      icon: <AiOutlineWarning />,
+      description: 'Our comprehensive threat detection services utilize state-of-the-art technology combined with advanced analytics to monitor your environment for any potential security breaches. We provide real-time alerts and actionable insights to help you mitigate risks and protect your assets effectively. Additionally, our threat detection solutions are scalable and adaptable, ensuring seamless integration with your existing security infrastructure.',
+    },
+    {
+      label: 'Security Guards',
+      icon: <AiOutlineUsergroupAdd />,
+      description: 'Our team of highly trained security professionals offers a range of security guard services tailored to meet your specific needs. From armed guards to patrol services, access monitoring, and emergency response, we ensure the safety and security of your premises round-the-clock. Furthermore, our security guards undergo rigorous training and adhere to strict standards of professionalism, ensuring optimal security posture at all times.',
+    },
+    {
+      label: 'Security Consultation',
+      icon: <AiOutlineAudit />,
+      description: 'Our security consultation services provide a comprehensive assessment of your security risks and vulnerabilities. We work closely with you to develop customized security strategies and implement effective measures to mitigate potential threats. With our expertise and experience, we help you safeguard your business and assets. Additionally, our consultants stay updated on the latest security trends and technologies, ensuring that your security posture remains robust and future-proof.',
+    }
+  ];
 
+  {/*Here I edited security services features section props script linking to tabs */}
 
   return (
     <Router>
@@ -76,6 +94,7 @@ function App() {
           <Feature features={featuresData} />
           <AboutUs />
           <CounterSection/>
+          <SecuritySection tabs={tabs} />
           <Icons/>
           <Feature1 />
           <Services />

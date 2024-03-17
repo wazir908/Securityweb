@@ -8,12 +8,12 @@ import service3Img from  '../../img/services/service-1.jpg';
 import service4Img from  '../../img/services/service-1.jpg';
 import service5Img from  '../../img/services/service-1.jpg';
 import service6Img from  '../../img/services/service-1.jpg';
-import service7Img from  '../../img/services/service-1.jpg';
+import service7Img from  '../../img/services/service-7.jpg';
 import service8Img from  '../../img/services/service-1.jpg';
 import service9Img from  '../../img/services/service-1.jpg';
 import service10Img from '../../img/services/service-1.jpg';
 import service11Img from '../../img/services/service-1.jpg';
-import service12Img from '../../img/services/service-1.jpg';
+import service12Img from '../../img/services/service-12.png';
 
 const Services = () => {
   return (
@@ -56,7 +56,7 @@ const Services = () => {
         <ServiceCard
           icon={AiOutlineSecurityScan}
           title="Security Assessment"
-          imgSrc={service12Img}
+          imgSrc={service6Img}
           description="Evaluate your security posture and identify vulnerabilities with our comprehensive security assessments. Our expert analysis helps you strengthen your defenses and mitigate risks."
         />
         <ServiceCard
@@ -92,7 +92,7 @@ const Services = () => {
         <ServiceCard
           icon={AiOutlineCamera}
           title="CCTV Monitoring"
-          imgSrc={service6Img}
+          imgSrc={service12Img}
           description="Enhance surveillance and threat detection with our CCTV monitoring services. Our trained operators monitor camera feeds, identify potential risks, and provide real-time alerts for timely intervention."
         />
       </div>

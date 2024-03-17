@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
+import { FaEnvelope, FaPhone } from 'react-icons/fa';
+import { FiFacebook, FiTwitter, FiInstagram } from 'react-icons/fi';
 import './contact.css';
 
-const Contact = (props) => {
+const Contact = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
@@ -36,17 +38,12 @@ const Contact = (props) => {
         <p>We'd love to hear from you. Feel free to reach out!</p>
         <div className="contact-details">
           <div className="contact-item">
-            <i className="fas fa-envelope"></i>
-            <span>{props.email}</span>
+            <FaEnvelope className="icon-contact" />
+            <span>info@example.com</span>
           </div>
           <div className="contact-item">
-            <i className="fas fa-phone"></i>
-            <span>{props.phone}</span>
-          </div>
-          <div className="social-icons">
-            <i className="fab fa-facebook-f"></i>
-            <i className="fab fa-twitter"></i>
-            <i className="fab fa-instagram"></i>
+            <FaPhone className="icon-contact" />
+            <span>+123-456-7890</span>
           </div>
         </div>
       </div>
